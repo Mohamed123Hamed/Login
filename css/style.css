@@ -1,0 +1,22 @@
+
+body {
+    background-image: url(./../imags/two.jpeg);
+    background-size: cover;
+    background-position: 100% 100%;
+    background-color:rgba(0,0,0,0.2);
+    height: 100vh;
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1 { color: #17a2b8;}
+
+.main {box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 8);}
+
+input,textarea {
+    background-color: transparent !important;
+    color: #fff !important;}
+
+input::placeholder,textarea::placeholder {
+    color: rgb(182, 182, 182) !important;}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FontAwesom framework-->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- Bootstrap framework-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- main style in css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Login&&Register</title>
+  </head>
+  <body>
+    <span class=" d-none text-center id="username"></span>
+
+    <div class="container my-5 text-center">
+      <div class="main m-auto w-75 p-5">
+
+        <h1 class="text-center">Smart Login System</h1>
+        <!--  this div contain Sign up  -->
+        <div id="logclass" class="logclass d-none">
+          <input type="text" id="signupName" class="form-control my-3" placeholder="enter your name" />
+          <input type="email" id="signupEmail" class="form-control my-3" placeholder="enter your email" />
+          <input type="password" id="signupPass" class="form-control my-3"
+                       placeholder="enter your  password" />
+          <p id="exist"></p>
+
+          <button onclick=" signUp()" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+          <p class="text-white">
+            You have an account? <a class="text-white btn" onclick="logotValue()">Signin</a>
+          </p>
+        </div>
+
+        <!-- this div contain Sign in -->
+        <div id="signupclss" class="signupclass">
+          <input  type="text" id="signinEmail" class="form-control my-3" placeholder="Enter your email"/>
+          <input type="password" id="signinPassword" class="form-control my-3" 
+               placeholder="Enter your password"  />
+          <p id="incorrect"></p>
+
+          <button onclick="login()" class="btn btn-outline-info w-100 my-3 " >Login</button>
+          <p class="text-white"> Don’t have an account?
+          <a class="text-white btn" onclick="loginMsgvalue()">Sign Up</a>
+          </p>
+        </div>
+
+       
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
